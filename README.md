@@ -1,30 +1,28 @@
-# tincode-react-icons
+# @tincode/react-icon
 
 > Biblioteca de iconos para React JS.
 
-[![NPM](https://img.shields.io/npm/v/tincode-react-icons.svg)](https://www.npmjs.com/package/tincode-react-icons) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+## Demo
+
+Ver [lista de iconos](https://xagustin93.github.io/tincode-react-icons/)
 
 ## Install
 
 ```bash
-npm install --save tincode-react-icons
+yarn add tincode-react-icon
 ```
 
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
+import Icon from 'tincode-react-icon'
+import 'tincode-react-icon/dist/index.css'
 
-import MyComponent from 'tincode-react-icons'
-import 'tincode-react-icons/dist/index.css'
-
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
+export default function App() {
+  return <Icon name='react' />
 }
 ```
 
 ## License
 
-MIT © [https://github.com/xAgustin93/tincode-react-icons](https://github.com/https://github.com/xAgustin93/tincode-react-icons)
+MIT © [Agustin Navarro Galdon](https://github.com/xAgustin93)

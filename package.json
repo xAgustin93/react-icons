@@ -15,7 +15,7 @@
     "build": "microbundle-crl --css-modules false --no-compress --format modern,cjs && yarn copy-fonts",
     "start": "microbundle-crl --css-modules false watch --no-compress --format modern,cjs & yarn copy-fonts",
     "copy-fonts": "mkdir -p dist/fonts/ && cp -a src/fonts/. dist/fonts/",
-    "deploy": "gh-pages -d example/build"
+    "deploy": "cd ./example && yarn build && cd .. && gh-pages -d example/build"
   },
   "peerDependencies": {
     "react": "^16.0.0"
